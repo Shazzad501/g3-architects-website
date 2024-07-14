@@ -116,6 +116,47 @@ main > section {
 }
 /* features section style close */
 
+/* facts section style start */
+.facts h2 {
+  color: rgb(19, 19, 19);
+  font-size: 2.7rem;
+  font-weight: 700;
+}
+.facts p {
+  color: rgb(114, 114, 114);
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 20px auto;
+}
+.facts-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.fact-card {
+  margin: auto auto;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 240px;
+  border: 1px solid rgb(255, 144, 14);
+  border-radius: 8px;
+}
+.fact-card h4 {
+  color: rgb(66, 66, 66);
+  margin: 10px auto;
+  font-size: 45px;
+  font-weight: 600;
+}
+.fact-card h5{
+  color: rgb(114, 114, 114);
+font-size: 1.25rem;
+font-weight: 600;
+}
+/* facts section style close */
+
 /*responsive media quary start */
 @media screen and (max-width: 576px) {
   .navbar,
@@ -123,17 +164,28 @@ main > section {
   .teams {
     flex-direction: column;
   }
-  .banner-content{
+  .banner-content {
     padding: 15px;
   }
-  .team-img-container{
+  .team-img-container {
     grid-template-columns: repeat(1, 1fr);
   }
-  .our-features{
+  .our-features {
     margin: 0px;
     padding: 15px;
   }
-
+  .facts-container{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .fact-card{
+    width: 96%;
+  }
+  .facts h2{
+    text-align: center;
+   }
+   .facts p{
+     text-align: center;
+   }
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -142,15 +194,24 @@ main > section {
   .teams {
     flex-direction: column;
   }
-  .banner-content{
+  .banner-content {
     padding: 15px;
   }
-  .team-img-container{
+  .team-img-container {
     grid-template-columns: repeat(1, 1fr);
   }
-  .our-features{
+  .our-features {
     margin: 0px;
     padding: 15px;
+  }
+  .facts-container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .facts h2{
+   text-align: center;
+  }
+  .facts p{
+    text-align: center;
   }
 }
 /*responsive media quary close*/
