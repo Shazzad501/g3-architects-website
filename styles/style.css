@@ -150,12 +150,46 @@ main > section {
   font-size: 45px;
   font-weight: 600;
 }
-.fact-card h5{
+.fact-card h5 {
   color: rgb(114, 114, 114);
-font-size: 1.25rem;
-font-weight: 600;
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 /* facts section style close */
+
+/* Spospors Section style start */
+.sponspors {
+  margin-bottom: 100px;
+}
+.sponspors-content {
+  max-width: 540px;
+  margin: 50px auto;
+  text-align: center;
+}
+.sponspors-title {
+  color: rgb(19, 19, 19);
+  font-size: 2.7rem;
+  font-weight: 700;
+}
+.sponspors-description {
+  color: rgb(114, 114, 114);
+  font-size: 1rem;
+  margin: 20px auto;
+  font-weight: 400;
+}
+
+.sponspors-company {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.sponspors-company img {
+  filter: grayscale(100%);
+  margin: auto auto;
+  border: 3px dashed gray;
+}
+/* Spospors Section style close */
+
+
 
 /*responsive media quary start */
 @media screen and (max-width: 576px) {
@@ -174,18 +208,30 @@ font-weight: 600;
     margin: 0px;
     padding: 15px;
   }
-  .facts-container{
+  .facts-container {
     grid-template-columns: repeat(1, 1fr);
   }
-  .fact-card{
+  .fact-card {
     width: 96%;
   }
-  .facts h2{
+  .facts h2 {
     text-align: center;
-   }
-   .facts p{
-     text-align: center;
-   }
+  }
+  .facts p {
+    text-align: center;
+  }
+  .sponspors-company {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .sponspors-company img {
+    margin-bottom: 30px;
+  }
+  .sponspors-content {
+    padding: 15px;
+  }
+  footer{
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -204,14 +250,27 @@ font-weight: 600;
     margin: 0px;
     padding: 15px;
   }
-  .facts-container{
+  .facts-container {
     grid-template-columns: repeat(2, 1fr);
   }
-  .facts h2{
-   text-align: center;
-  }
-  .facts p{
+  .facts h2 {
     text-align: center;
+  }
+  .facts p {
+    text-align: center;
+  }
+  .sponspors-company {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .sponspors-company img {
+    margin-bottom: 30px;
+  }
+  .sponspors-content {
+    padding: 15px;
+  }
+  footer{
+    width: 100%;
   }
 }
 /*responsive media quary close*/
