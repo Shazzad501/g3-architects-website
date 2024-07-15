@@ -189,7 +189,24 @@ main > section {
 }
 /* Spospors Section style close */
 
-
+/* Footer section style start */
+footer{
+  max-width: 1440px;
+  height: 100px;
+  margin: 0px auto;
+  border-radius: 8px;
+  background: rgb(255, 244, 231);
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+footer p {
+  color: rgb(66, 66, 66);
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+/* Footer section style close */
 
 /*responsive media quary start */
 @media screen and (max-width: 576px) {
